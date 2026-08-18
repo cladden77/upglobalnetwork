@@ -1,0 +1,165 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"layout": {
+			"contentSize": "1130px",
+			"wideSize": "1280px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{ "slug": "navy", "name": "Navy", "color": "#000f1c" },
+				{ "slug": "olive", "name": "Olive", "color": "#5b6e54" },
+				{ "slug": "ink", "name": "Ink", "color": "#132533" },
+				{ "slug": "body", "name": "Body", "color": "#43474c" },
+				{ "slug": "muted", "name": "Muted", "color": "#7b8d9e" },
+				{ "slug": "light", "name": "Light", "color": "#f5f3f3" },
+				{ "slug": "offwhite", "name": "Off White", "color": "#fbf9f9" },
+				{ "slug": "white", "name": "White", "color": "#ffffff" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Poppins\", sans-serif",
+					"name": "Poppins",
+					"slug": "poppins",
+					"fontFace": [
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/poppins-v24-latin-300.woff2"]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/poppins-v24-latin-regular.woff2"]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"src": ["file:./assets/fonts/poppins-v24-latin-italic.woff2"]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/poppins-v24-latin-600.woff2"]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"src": ["file:./assets/fonts/poppins-v24-latin-600italic.woff2"]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/poppins-v24-latin-700.woff2"]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "xs", "size": "0.75rem", "name": "XS" },
+				{ "slug": "sm", "size": "0.875rem", "name": "Small" },
+				{ "slug": "base", "size": "1rem", "name": "Base" },
+				{ "slug": "md", "size": "1.125rem", "name": "Medium" },
+				{ "slug": "lg", "size": "2rem", "name": "Large" },
+				{ "slug": "xl", "size": "3rem", "name": "XL" },
+				{ "slug": "xxl", "size": "3.5rem", "name": "XXL" },
+				{ "slug": "hero", "size": "4rem", "name": "Hero" }
+			]
+		},
+		"spacing": {
+			"spacingSizes": [
+				{ "slug": "20", "size": "0.5rem", "name": "20" },
+				{ "slug": "30", "size": "1rem", "name": "30" },
+				{ "slug": "40", "size": "1.5rem", "name": "40" },
+				{ "slug": "50", "size": "2rem", "name": "50" },
+				{ "slug": "60", "size": "3rem", "name": "60" },
+				{ "slug": "70", "size": "4rem", "name": "70" },
+				{ "slug": "80", "size": "5rem", "name": "80" }
+			]
+		}
+	},
+	"styles": {
+		"spacing": {
+			"blockGap": "0",
+			"padding": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0"
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--white)",
+			"text": "var(--wp--preset--color--body)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--poppins)",
+			"fontSize": "var(--wp--preset--font-size--base)",
+			"lineHeight": "1.6"
+		},
+		"elements": {
+			"heading": {
+				"typography": { "fontWeight": "700", "lineHeight": "1.2" }
+			},
+			"h1": {
+				"typography": { "fontWeight": "700" }
+			},
+			"h2": {
+				"typography": { "fontWeight": "700" }
+			},
+			"h3": {
+				"typography": { "fontWeight": "600" }
+			},
+			"link": {
+				"color": { "text": "inherit" },
+				"typography": { "textDecoration": "none" }
+			},
+			"button": {
+				"border": {
+					"radius": "2px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--olive)",
+					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontSize": "0.875rem",
+					"fontWeight": "600",
+					"letterSpacing": "0.05em"
+				},
+				"spacing": {
+					"padding": {
+						"top": "1rem",
+						"bottom": "1rem",
+						"left": "1.75rem",
+						"right": "1.75rem"
+					}
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Header", "area": "header" },
+		{ "name": "footer", "title": "Footer", "area": "footer" }
+	],
+	"customTemplates": [
+		{ "name": "page-our-strategy", "title": "Our Strategy", "postTypes": ["page"] },
+		{ "name": "page-get-involved", "title": "Get Involved", "postTypes": ["page"] },
+		{ "name": "page-who-we-minister", "title": "Who We're Ministering To", "postTypes": ["page"] },
+		{ "name": "page-leadership", "title": "Leadership", "postTypes": ["page"] },
+		{ "name": "page-give", "title": "Give", "postTypes": ["page"] },
+		{ "name": "page-contact", "title": "Contact", "postTypes": ["page"] }
+	]
+}

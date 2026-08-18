@@ -1,0 +1,64 @@
+/*
+Theme Name: UP Global Network
+Theme URI: https://upglobalnetwork.org
+Author: UP Global Network
+Description: Block theme for UP Global Network — matching Penpot mockups with editable patterns.
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 8.0
+Version: 1.2.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: upglobalnetwork
+Tags: full-site-editing, block-patterns, custom-colors, custom-menu, featured-images
+*/
+
+:root {
+	--up-navy: #000f1c;
+	--up-navy-deep: #000e1c;
+	--up-olive: #5b6e54;
+	--up-ink: #132533;
+	--up-body: #43474c;
+	--up-muted: #7b8d9e;
+	--up-light: #f5f3f3;
+	--up-offwhite: #fbf9f9;
+	--up-white: #ffffff;
+	--up-content: 1130px;
+	--up-pad: clamp(1.25rem, 5vw, 4.6875rem);
+	--up-section-y: clamp(3.5rem, 8vw, 5rem);
+	--up-radius: 2px;
+	--up-font: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: var(--up-font);
+	color: var(--up-body);
+	background: var(--up-white);
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	font-family: inherit;
+}
