@@ -590,18 +590,19 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 
 .up-feature__icon,
 .up-feature-list__icon {
-	display: grid;
-	place-items: center;
+	display: block;
 	width: 48px;
 	height: 48px;
 	flex-shrink: 0;
+	line-height: 0;
 	border-radius: var(--up-radius);
-	background: var(--up-olive);
+	overflow: hidden;
+	background: transparent;
 }
 
 .up-feature__icon img {
-	width: 20px;
-	height: 20px;
+	width: 48px;
+	height: 48px;
 	display: block;
 }
 
@@ -645,12 +646,13 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-involved {
 	background: #f5f3f3;
 	padding: 80px var(--up-pad);
+	text-align: center;
 }
 
 .up-involved .up-wrap {
 	display: flex;
 	flex-direction: column;
-	gap: 48px;
+	gap: 64px;
 	align-items: center;
 }
 
@@ -658,22 +660,43 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	color: var(--up-ink);
 	font-size: 48px;
 	font-weight: 700;
+	line-height: 1.17;
 	text-align: center;
+	margin: 0 0 64px;
 }
 
 .up-involved__grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 24px;
 	width: 100%;
+	max-width: none;
+	margin: 0 0 48px;
 }
 
 .up-pathway {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 16px;
+	height: 100%;
 	padding: 40px 40px 64px;
 	background: #fff;
+	text-align: center;
+}
+
+.up-pathway__icon {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto 8px;
+	line-height: 0;
+}
+
+.up-pathway__icon img {
+	width: 48px;
+	height: 48px;
+	display: block;
 }
 
 .up-pathway h3 {
@@ -681,7 +704,9 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 0.7px;
+	line-height: 1.43;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 .up-pathway p {
@@ -689,6 +714,8 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 1.5;
+	margin: 0;
+	max-width: 292px;
 }
 
 /* Closing CTA */
@@ -1360,6 +1387,15 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	.up-involved .wp-block-columns,
+	.up-involved .up-involved__grid.wp-block-columns {
+		flex-wrap: wrap !important;
+	}
+
+	.up-involved .up-involved__grid.wp-block-columns > .wp-block-column {
+		flex-basis: calc(50% - 12px) !important;
+	}
+
 	.up-hero,
 	.up-hero--page {
 		min-height: 0;
@@ -1466,6 +1502,14 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	.up-pathways-bento,
 	.up-integrity__stats {
 		grid-template-columns: 1fr;
+	}
+
+	.up-involved .up-involved__grid.wp-block-columns > .wp-block-column {
+		flex-basis: 100% !important;
+	}
+
+	.up-involved h2 {
+		margin-bottom: 40px;
 	}
 
 	.up-who__media img {
@@ -1956,16 +2000,83 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	text-align: center;
 }
 
-.up-involved .wp-block-columns {
-	gap: 24px;
+.up-involved h2 {
+	color: var(--up-ink);
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.17;
+	margin: 0 0 64px;
+}
+
+.up-involved .wp-block-columns,
+.up-involved .up-involved__grid.wp-block-columns {
+	display: flex !important;
+	gap: 24px !important;
 	width: 100%;
 	max-width: none;
-	margin: 0;
+	margin: 0 0 48px;
+	align-items: stretch;
 }
 
 .up-pathway.wp-block-group {
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px !important;
+	height: 100%;
 	padding: 40px 40px 64px !important;
 	background: #fff;
+	text-align: center;
+}
+
+.up-involved .up-pathway__icon {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto;
+	line-height: 0;
+}
+
+.up-involved .up-pathway__icon img {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+
+.up-involved .up-pathway h3 {
+	color: var(--up-ink);
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.up-involved .up-pathway p {
+	color: var(--up-body);
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0 auto;
+	max-width: 292px;
+}
+
+.up-involved .wp-block-buttons {
+	justify-content: center;
+	margin: 0;
+}
+
+.up-involved .wp-block-button__link {
+	background: var(--up-olive);
+	border-radius: var(--up-radius);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.7px;
+	line-height: 1.43;
+	padding: 20px 40px;
+	text-transform: uppercase;
 }
 
 .up-cta-band .wp-block-buttons {

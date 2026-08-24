@@ -4,6 +4,7 @@
  * Slug: upglobalnetwork/home-get-involved
  * Categories: upglobalnetwork
  */
+$uri = get_template_directory_uri();
 ?>
 <!-- wp:group {"align":"full","className":"up-involved","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-involved">
@@ -11,17 +12,20 @@
 	<h2 class="wp-block-heading has-text-align-center">The Mission Needs You</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:columns -->
-	<div class="wp-block-columns">
+	<!-- wp:columns {"className":"up-involved__grid"} -->
+	<div class="wp-block-columns up-involved__grid">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-pathway","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"up-pathway","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-pathway">
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">PRAY</h3>
+				<!-- wp:html -->
+				<span class="up-pathway__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/pray.svg' ); ?>" alt="" width="48" height="48" /></span>
+				<!-- /wp:html -->
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">PRAY</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Join thousands receiving weekly prayer alerts for specific people groups.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Join thousands receiving weekly prayer alerts for specific people groups.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -30,13 +34,16 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-pathway","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"up-pathway","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-pathway">
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">GIVE</h3>
+				<!-- wp:html -->
+				<span class="up-pathway__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/give.svg' ); ?>" alt="" width="48" height="48" /></span>
+				<!-- /wp:html -->
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">GIVE</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Directly fund the deployment of indigenous pioneers into unreached areas.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Directly fund the deployment of indigenous pioneers into unreached areas.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -45,13 +52,16 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-pathway","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"up-pathway","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-pathway">
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">GO &amp; SERVE</h3>
+				<!-- wp:html -->
+				<span class="up-pathway__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/go-serve.svg' ); ?>" alt="" width="48" height="48" /></span>
+				<!-- /wp:html -->
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">GO &amp; SERVE</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Short-term vision trips designed to connect you with our global partners.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Short-term vision trips designed to connect you with our global partners.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
