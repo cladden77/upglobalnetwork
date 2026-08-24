@@ -4,21 +4,25 @@
  * Slug: upglobalnetwork/home-places-grid
  * Categories: upglobalnetwork
  */
-$uri = get_template_directory_uri();
+$uri  = get_template_directory_uri();
 $link = esc_url( home_url( '/who-we-minister/' ) );
 ?>
-<!-- wp:group {"align":"full","className":"up-places","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-places","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-places">
-	<!-- wp:paragraph {"align":"center","className":"up-eyebrow","textColor":"olive"} -->
-	<p class="has-text-align-center up-eyebrow has-olive-color has-text-color">OUR FOCUS</p>
-	<!-- /wp:paragraph -->
+	<!-- wp:group {"className":"up-places__intro","layout":{"type":"default"}} -->
+	<div class="wp-block-group up-places__intro">
+		<!-- wp:paragraph {"align":"center","className":"up-eyebrow","textColor":"olive"} -->
+		<p class="has-text-align-center up-eyebrow has-olive-color has-text-color">OUR FOCUS</p>
+		<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"textAlign":"center","level":2} -->
-	<h2 class="wp-block-heading has-text-align-center">Who We're Ministering To</h2>
-	<!-- /wp:heading -->
+		<!-- wp:heading {"textAlign":"center","level":2} -->
+		<h2 class="wp-block-heading has-text-align-center">Who We're Ministering To</h2>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
 
-	<!-- wp:group {"className":"up-places__row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-	<div class="wp-block-group up-places__row">
+	<!-- wp:group {"className":"up-places__grid","layout":{"type":"default"}} -->
+	<div class="wp-block-group up-places__grid">
 		<!-- wp:cover {"url":"<?php echo esc_url( $uri . '/assets/images/home/nepal.jpg' ); ?>","dimRatio":0,"minHeight":450,"className":"up-place-card"} -->
 		<div class="wp-block-cover up-place-card" style="min-height:450px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="Nepal" src="<?php echo esc_url( $uri . '/assets/images/home/nepal.jpg' ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 			<!-- wp:heading {"level":3} -->
@@ -60,11 +64,7 @@ $link = esc_url( home_url( '/who-we-minister/' ) );
 			<!-- /wp:paragraph -->
 		</div></div>
 		<!-- /wp:cover -->
-	</div>
-	<!-- /wp:group -->
 
-	<!-- wp:group {"className":"up-places__row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-	<div class="wp-block-group up-places__row">
 		<!-- wp:cover {"url":"<?php echo esc_url( $uri . '/assets/images/home/lebanon.jpg' ); ?>","dimRatio":0,"minHeight":450,"className":"up-place-card"} -->
 		<div class="wp-block-cover up-place-card" style="min-height:450px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="Lebanon" src="<?php echo esc_url( $uri . '/assets/images/home/lebanon.jpg' ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 			<!-- wp:heading {"level":3} -->

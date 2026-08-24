@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-cta-band","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-cta-band","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-cta-band">
 	<!-- wp:heading {"textAlign":"center","level":2} -->
 	<h2 class="wp-block-heading has-text-align-center">Ready to make an<br /><em>eternal impact</em>?</h2>

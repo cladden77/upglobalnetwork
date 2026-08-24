@@ -7,7 +7,7 @@
 $contact = esc_url( home_url( '/contact/' ) );
 $give    = esc_url( home_url( '/give/' ) );
 ?>
-<!-- wp:group {"anchor":"pathways","align":"full","className":"up-pathways","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"anchor":"pathways","align":"full","className":"up-pathways","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-pathways has-background" id="pathways" style="background-color:#f5f3f3">
 	<!-- wp:group {"className":"up-pathways-bento","layout":{"type":"default"}} -->
 	<div class="wp-block-group up-pathways-bento">

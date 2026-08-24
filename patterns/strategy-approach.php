@@ -6,7 +6,7 @@
  */
 $uri = get_template_directory_uri();
 ?>
-<!-- wp:group {"align":"full","className":"up-approach","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-approach","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-approach">
 	<!-- wp:paragraph {"className":"up-chapter"} -->
 	<p class="up-chapter">CHAPTER 03</p>

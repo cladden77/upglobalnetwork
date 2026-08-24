@@ -6,7 +6,7 @@
  */
 $contact = esc_url( home_url( '/contact/' ) );
 ?>
-<!-- wp:group {"align":"full","className":"up-other","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-other","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-other has-background" style="background-color:#f5f3f3">
 	<!-- wp:heading {"level":2} -->
 	<h2 class="wp-block-heading">Other Ways to Partner</h2>

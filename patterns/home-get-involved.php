@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-involved","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-involved","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-involved">
 	<!-- wp:heading {"textAlign":"center","level":2} -->
 	<h2 class="wp-block-heading has-text-align-center">The Mission Needs You</h2>

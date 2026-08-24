@@ -6,7 +6,7 @@
  */
 $uri = get_template_directory_uri();
 ?>
-<!-- wp:group {"align":"full","className":"up-team","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-team","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-team has-background" style="background-color:#f5f3f3">
 	<!-- wp:heading {"level":2} -->
 	<h2 class="wp-block-heading">Our Leadership Team</h2>

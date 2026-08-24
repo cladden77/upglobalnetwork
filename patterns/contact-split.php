@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-contact","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-contact","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-contact">
 	<!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top">

@@ -6,7 +6,7 @@ Description: Block theme for UP Global Network — matching Penpot mockups with 
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 8.0
-Version: 1.2.1
+Version: 1.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: upglobalnetwork
@@ -23,8 +23,8 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-menu, featured-im
 	--up-light: #f5f3f3;
 	--up-offwhite: #fbf9f9;
 	--up-white: #ffffff;
-	--up-content: 1130px;
-	--up-pad: clamp(1.25rem, 5vw, 4.6875rem);
+	--up-content: 100%;
+	--up-pad: 75px;
 	--up-section-y: clamp(3.5rem, 8vw, 5rem);
 	--up-radius: 2px;
 	--up-font: "Poppins", sans-serif;

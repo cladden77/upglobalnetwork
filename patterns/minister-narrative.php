@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-narrative","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-narrative","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-narrative">
 	<!-- wp:heading {"level":2} -->
 	<h2 class="wp-block-heading">Beyond<br />Geography</h2>

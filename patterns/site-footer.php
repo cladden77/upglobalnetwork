@@ -7,7 +7,7 @@
  */
 $uri = get_template_directory_uri();
 ?>
-<!-- wp:group {"tagName":"footer","align":"full","className":"up-footer","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"tagName":"footer","align":"full","className":"up-footer","layout":{"type":"default"}} -->
 <footer class="wp-block-group alignfull up-footer">
 	<!-- wp:image {"align":"center","width":"413px","sizeSlug":"full"} -->
 	<figure class="wp-block-image aligncenter size-full is-resized"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $uri . '/assets/images/shared/logo-footer.svg' ); ?>" alt="UP Global Network" style="width:413px"/></a></figure>

@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-hero up-hero--light","layout":{"type":"constrained","contentSize":"768px","justifyContent":"left"}} -->
+<!-- wp:group {"align":"full","className":"up-hero up-hero--light","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-hero up-hero--light">
 	<!-- wp:paragraph {"className":"up-eyebrow"} -->
 	<p class="up-eyebrow">Guiding Our Global Mission</p>

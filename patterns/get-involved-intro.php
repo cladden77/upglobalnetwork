@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-intro","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"align":"full","className":"up-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-intro">
 	<!-- wp:paragraph {"align":"center","className":"up-eyebrow"} -->
 	<p class="has-text-align-center up-eyebrow">The Call</p>

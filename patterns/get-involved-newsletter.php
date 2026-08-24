@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-newsletter","layout":{"type":"constrained","contentSize":"720px"}} -->
+<!-- wp:group {"align":"full","className":"up-newsletter","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-newsletter">
 	<!-- wp:heading {"textAlign":"center","level":2} -->
 	<h2 class="wp-block-heading has-text-align-center">Stay Informed</h2>

@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"anchor":"give","align":"full","className":"up-integrity","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"anchor":"give","align":"full","className":"up-integrity","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-integrity" id="give">
 	<!-- wp:paragraph {"className":"up-chapter"} -->
 	<p class="up-chapter">Accountability</p>

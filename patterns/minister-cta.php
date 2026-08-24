@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-cta-band up-cta-band--light","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-cta-band up-cta-band--light","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-cta-band up-cta-band--light">
 	<!-- wp:heading {"textAlign":"center","level":2} -->
 	<h2 class="wp-block-heading has-text-align-center">Ready to join the mission?</h2>

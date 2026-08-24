@@ -6,7 +6,7 @@
  */
 $uri = get_template_directory_uri();
 ?>
-<!-- wp:group {"align":"full","className":"up-board","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-board","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-board">
 	<!-- wp:heading {"level":2} -->
 	<h2 class="wp-block-heading">Our Board</h2>

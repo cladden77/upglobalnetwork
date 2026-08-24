@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-stats","layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-stats","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-stats">
 	<!-- wp:paragraph {"className":"up-chapter"} -->
 	<p class="up-chapter">CHAPTER 04</p>

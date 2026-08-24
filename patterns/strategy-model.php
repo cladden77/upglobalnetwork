@@ -5,7 +5,7 @@
  * Categories: upglobalnetwork
  */
 ?>
-<!-- wp:group {"align":"full","className":"up-bento","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"constrained","contentSize":"1130px"}} -->
+<!-- wp:group {"align":"full","className":"up-bento","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-bento has-background" style="background-color:#f5f3f3">
 	<!-- wp:paragraph {"className":"up-chapter","textColor":"olive"} -->
 	<p class="up-chapter has-olive-color has-text-color">CHAPTER 02</p>
