@@ -8,11 +8,11 @@
 <!-- wp:group {"align":"full","className":"up-cta-band","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-cta-band">
 	<!-- wp:heading {"textAlign":"center","level":2} -->
-	<h2 class="wp-block-heading has-text-align-center">Ready to make an<br /><em>eternal impact</em>?</h2>
+	<h2 class="wp-block-heading has-text-align-center">Ready to make an<br /><em>eternal impact?</em></h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons">
+	<!-- wp:buttons {"className":"up-cta-band__actions","layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"24px"}}} -->
+	<div class="wp-block-buttons up-cta-band__actions">
 		<!-- wp:button -->
 		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/give/' ) ); ?>">Give to the network</a></div>
 		<!-- /wp:button -->
