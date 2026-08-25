@@ -7,21 +7,26 @@
 ?>
 <!-- wp:group {"align":"full","className":"up-bento","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-bento has-background" style="background-color:#f5f3f3">
-	<!-- wp:paragraph {"className":"up-chapter","textColor":"olive"} -->
-	<p class="up-chapter has-olive-color has-text-color">CHAPTER 02</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:heading {"level":2} -->
-	<h2 class="wp-block-heading">Our Model: Sustained Impact</h2>
-	<!-- /wp:heading -->
-	<!-- wp:paragraph -->
-	<p>We don't believe in "helicopter missions." We build foundations that endure for generations through three core pillars.</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:columns -->
-	<div class="wp-block-columns">
+	<!-- wp:group {"className":"up-bento__intro","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group up-bento__intro">
+		<!-- wp:paragraph {"align":"center","className":"up-chapter"} -->
+		<p class="has-text-align-center up-chapter">CHAPTER 02</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"textAlign":"center","level":2} -->
+		<h2 class="wp-block-heading has-text-align-center">Our Model: Sustained Impact</h2>
+		<!-- /wp:heading -->
+		<!-- wp:paragraph {"align":"center"} -->
+		<p class="has-text-align-center">We don't believe in "helicopter missions." We build foundations that endure for generations through three core pillars.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:columns {"className":"up-bento__grid","style":{"spacing":{"blockGap":"32px"}}} -->
+	<div class="wp-block-columns up-bento__grid">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-card","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group up-card">
+			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
+			<div class="wp-block-group up-bento-card">
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Native Partnerships</h3>
 				<!-- /wp:heading -->
@@ -34,8 +39,8 @@
 		<!-- /wp:column -->
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-card","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group up-card">
+			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
+			<div class="wp-block-group up-bento-card">
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Holistic Training</h3>
 				<!-- /wp:heading -->
@@ -48,8 +53,8 @@
 		<!-- /wp:column -->
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"up-card","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group up-card">
+			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
+			<div class="wp-block-group up-bento-card">
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Long-term Dev</h3>
 				<!-- /wp:heading -->
