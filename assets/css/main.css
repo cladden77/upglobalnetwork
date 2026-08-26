@@ -1674,15 +1674,55 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 		display: none !important;
 	}
 
-	.up-header .wp-block-navigation__container {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 20px !important;
+	.up-header .wp-block-navigation__responsive-container.is-menu-open {
+		inset: 0 !important;
+		width: 100% !important;
+		max-width: none !important;
+		--navigation-layout-justification-setting: center;
+		--navigation-layout-align: center;
 	}
 
-	.up-header .up-nav__give {
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-dialog {
+		width: 100%;
+		max-width: none;
+	}
+
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+		align-items: center !important;
+		justify-content: center !important;
+		width: 100%;
+		min-height: 100%;
+		padding: 96px var(--up-pad) 48px;
+		box-sizing: border-box;
+	}
+
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+		flex-direction: column;
+		align-items: center !important;
+		width: 100%;
+		max-width: none;
+		margin: 0 !important;
+		gap: 24px !important;
+	}
+
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+		align-items: center !important;
+		justify-content: center !important;
+		width: 100%;
+	}
+
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.up-header .wp-block-navigation__responsive-container.is-menu-open .up-nav__give {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 		margin-left: 0 !important;
-		margin-top: 8px;
+		margin-top: 16px;
 	}
 
 	.up-header .wp-block-buttons,
@@ -2038,15 +2078,6 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-header .wp-block-navigation__responsive-container.is-menu-open {
 	background-color: var(--up-navy) !important;
 	color: #fff;
-}
-
-.up-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
-	gap: 20px !important;
-}
-
-.up-header .wp-block-navigation__responsive-container.is-menu-open .up-nav__give {
-	margin-left: 0;
-	margin-top: 8px;
 }
 
 .up-who .wp-block-columns {
