@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'UPGN_VERSION', '1.3.0' );
+define( 'UPGN_VERSION', '1.3.1' );
 define( 'UPGN_DIR', get_template_directory() );
 define( 'UPGN_URI', get_template_directory_uri() );
 

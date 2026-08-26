@@ -727,7 +727,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 }
 
 .up-cta-band--light {
-	background: #f5f3f3;
+	background: #e9e8e7;
 }
 
 .up-cta-band h2 {
@@ -747,6 +747,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	color: var(--up-ink);
 	font-size: 48px;
 	font-weight: 700 !important;
+	line-height: 1.17;
 }
 
 .up-cta-band p {
@@ -1034,8 +1035,29 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-bento-card {
 	background: #fff;
 	min-height: 320px;
-	padding: 120px 33px 48px;
+	padding: 32px 33px 48px;
 	border: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: left;
+}
+
+.up-bento-card__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 24px;
+	background: #d3e9c9;
+	flex-shrink: 0;
+}
+
+.up-bento-card__icon img {
+	width: 28px;
+	height: auto;
+	display: block;
 }
 
 .up-bento-card h3 {
@@ -1143,53 +1165,105 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-approach {
 	background: var(--up-navy);
 	color: #fff;
+	padding: 80px var(--up-pad);
 }
 
 .up-approach h2 {
 	color: #fff;
 	font-size: 48px;
 	font-weight: 700;
-	margin: 12px 0 16px;
+	line-height: 1.17;
+	margin: 0 0 32px;
 }
 
 .up-approach .up-lede {
-	color: rgba(255, 255, 255, 0.9);
+	color: #fff;
 	font-size: 18px;
 	font-weight: 300;
+	line-height: 1.55;
+	max-width: none;
+	margin: 0 0 32px;
+}
+
+.up-approach__media {
+	position: relative;
+	width: 100%;
+	max-width: 443px;
+	margin: 0 auto 0 0;
+	z-index: 1;
+}
+
+.up-approach__media::before {
+	content: "";
+	position: absolute;
+	left: -32px;
+	bottom: -32px;
+	width: 256px;
+	height: 256px;
+	border: 4px solid var(--up-olive);
+	box-sizing: border-box;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.up-approach__media img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 443 / 554;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.up-approach__copy {
+	max-width: 639px;
+}
+
+.up-approach .up-chapter {
+	margin: 0 0 0;
 }
 
 .up-steps {
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-	margin-top: 40px;
-	max-width: 720px;
+	margin-top: 0;
+	max-width: none;
 }
 
 .up-step {
 	display: grid;
-	grid-template-columns: 64px 1fr;
-	gap: 16px;
+	grid-template-columns: 50px 1fr;
+	gap: 12px 24px;
+	align-items: start;
 }
 
 .up-step__num {
 	color: var(--up-olive);
 	font-size: 36px;
 	font-weight: 700;
-	line-height: 1;
+	line-height: 1.11;
+	margin: 0;
+}
+
+.up-step__body {
+	min-width: 0;
 }
 
 .up-step h3 {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 8px;
+	line-height: 1.33;
+	margin: 4px 0 8px;
 }
 
 .up-step p {
-	color: rgba(255, 255, 255, 0.9);
+	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
 }
 
 .up-stats__grid {
@@ -2366,16 +2440,48 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 60px;
+	min-height: 56px;
 	box-sizing: border-box;
 	border-radius: 2px !important;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.7px;
 	line-height: 1.43;
-	padding: 20px 40px;
+	padding: 16px 40px;
 	text-transform: uppercase;
 	white-space: nowrap;
+	background: var(--up-olive) !important;
+	color: #fff !important;
+	border: 2px solid var(--up-olive) !important;
+}
+
+.up-cta-band--light .is-style-up-dark-outline .wp-block-button__link {
+	background: transparent !important;
+	border: 2px solid var(--up-ink) !important;
+	color: var(--up-ink) !important;
+}
+
+.up-cta-band--light h2 {
+	color: var(--up-ink);
+	font-size: 48px;
+	font-weight: 700 !important;
+	line-height: 1.17;
+	margin: 0;
+}
+
+.up-cta-band--light p {
+	max-width: 640px;
+	margin: 24px auto 0;
+	color: var(--up-body);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.55;
+}
+
+.up-cta-band--light .wp-block-buttons,
+.up-cta-band--light .wp-block-buttons.up-cta-band__actions {
+	margin-top: 24px;
+	gap: 24px !important;
 }
 
 .up-footer .wp-block-image,
@@ -2497,30 +2603,58 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-steps.wp-block-group {
 	display: flex !important;
 	flex-direction: column;
-	gap: 32px;
-	margin-top: 40px;
-	max-width: 720px;
+	gap: 32px !important;
+	margin-top: 0;
+	max-width: none;
 }
 
 .up-step.wp-block-group {
 	display: grid !important;
-	grid-template-columns: 64px 1fr;
-	gap: 16px;
+	grid-template-columns: 50px 1fr;
+	column-gap: 24px;
+	row-gap: 0;
+	align-items: start;
 }
 
-.up-approach .wp-block-columns {
-	gap: 64px;
+.up-approach .wp-block-columns,
+.up-approach .up-approach__grid.wp-block-columns {
+	gap: 48px !important;
 	width: 100%;
-	max-width: none;
-	margin-top: 40px;
+	max-width: 1130px;
+	margin: 0 auto;
 	align-items: center;
 }
 
-.up-approach .wp-block-image img {
+.up-approach .wp-block-image img,
+.up-approach__media img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	border-radius: var(--up-radius);
+	border-radius: 0;
+}
+
+.up-approach .up-approach__copy .up-chapter {
+	color: var(--up-olive);
+}
+
+.up-approach .up-step__num {
+	margin: 0;
+}
+
+.up-approach .up-step h3,
+.up-approach .up-step .wp-block-heading {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	margin: 4px 0 8px;
+}
+
+.up-approach .up-step p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
 }
 
 .up-stat h3,
@@ -2647,10 +2781,13 @@ p.up-text-link a {
 }
 
 .up-bento-card.wp-block-group {
-	padding: 120px 33px 48px !important;
+	padding: 32px 33px 48px !important;
 	background: #fff;
 	border: 0;
 	min-height: 320px;
+	display: flex !important;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .up-bento .up-bento__intro .up-chapter {
@@ -2796,6 +2933,28 @@ figure.wp-block-image {
 	.up-bento-card,
 	.up-bento-card.wp-block-group {
 		min-height: 0;
-		padding: 48px 24px !important;
+		padding: 32px 24px !important;
+	}
+
+	.up-approach__media {
+		max-width: none;
+		margin: 0 0 48px;
+	}
+
+	.up-approach__media::before {
+		left: -16px;
+		bottom: -16px;
+		width: 160px;
+		height: 160px;
+	}
+
+	.up-approach .wp-block-columns,
+	.up-approach .up-approach__grid.wp-block-columns {
+		gap: 40px !important;
+	}
+
+	.up-step.wp-block-group {
+		grid-template-columns: 48px 1fr;
+		column-gap: 16px;
 	}
 }

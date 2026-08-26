@@ -4,6 +4,7 @@
  * Slug: upglobalnetwork/strategy-model
  * Categories: upglobalnetwork
  */
+$uri = get_template_directory_uri();
 ?>
 <!-- wp:group {"align":"full","className":"up-bento","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-bento has-background" style="background-color:#f5f3f3">
@@ -27,6 +28,9 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-bento-card">
+				<!-- wp:html -->
+				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-partnerships.svg' ); ?>" alt="" width="28" height="25" /></div>
+				<!-- /wp:html -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Native Partnerships</h3>
 				<!-- /wp:heading -->
@@ -41,6 +45,9 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-bento-card">
+				<!-- wp:html -->
+				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-training.svg' ); ?>" alt="" width="28" height="23" /></div>
+				<!-- /wp:html -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Holistic Training</h3>
 				<!-- /wp:heading -->
@@ -55,6 +62,9 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"up-bento-card","layout":{"type":"default"}} -->
 			<div class="wp-block-group up-bento-card">
+				<!-- wp:html -->
+				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-development.svg' ); ?>" alt="" width="23" height="23" /></div>
+				<!-- /wp:html -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Long-term Dev</h3>
 				<!-- /wp:heading -->

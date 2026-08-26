@@ -13,8 +13,8 @@
 	<!-- wp:paragraph {"align":"center"} -->
 	<p class="has-text-align-center">Our strategy is ambitious because the need is urgent. We invite you to partner with us through prayer, giving, or going.</p>
 	<!-- /wp:paragraph -->
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons">
+	<!-- wp:buttons {"className":"up-cta-band__actions","layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"24px"}}} -->
+	<div class="wp-block-buttons up-cta-band__actions">
 		<!-- wp:button -->
 		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/give/' ) ); ?>">Support the strategy</a></div>
 		<!-- /wp:button -->
