@@ -1025,6 +1025,10 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	line-height: 1.5;
 }
 
+.up-bento__intro > *:last-child {
+	margin-bottom: 0;
+}
+
 .up-bento__grid.wp-block-columns {
 	gap: 32px !important;
 	max-width: 1130px;
@@ -1039,8 +1043,8 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	border: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
-	text-align: left;
+	align-items: center;
+	text-align: center;
 }
 
 .up-bento-card__icon {
@@ -1051,7 +1055,13 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	height: 64px;
 	margin: 0 auto 24px;
 	background: #d3e9c9;
+	border-radius: 12px;
 	flex-shrink: 0;
+}
+
+.up-bento-card .wp-block-html {
+	margin: 0;
+	line-height: 0;
 }
 
 .up-bento-card__icon img {
@@ -1060,12 +1070,14 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	display: block;
 }
 
-.up-bento-card h3 {
+.up-bento-card h3,
+.up-bento-card .wp-block-heading {
 	color: var(--up-ink);
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.33;
-	margin: 0 0 16px;
+	margin: 0 0 16px !important;
+	text-align: center;
 }
 
 .up-bento-card p {
@@ -1074,6 +1086,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0;
+	text-align: center;
 }
 
 .up-bento h2,
@@ -2818,7 +2831,22 @@ p.up-text-link a {
 	min-height: 320px;
 	display: flex !important;
 	flex-direction: column;
-	align-items: stretch;
+	align-items: center;
+	text-align: center;
+	gap: 0 !important;
+}
+
+.up-bento-card.wp-block-group .up-bento-card__icon {
+	margin: 0 auto 24px !important;
+}
+
+.up-bento-card.wp-block-group .wp-block-heading,
+.up-bento-card.wp-block-group p {
+	text-align: center;
+}
+
+.up-bento .up-bento__intro {
+	margin-bottom: 64px !important;
 }
 
 .up-bento .up-bento__intro .up-chapter {

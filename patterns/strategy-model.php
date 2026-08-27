@@ -31,11 +31,11 @@ $uri = get_template_directory_uri();
 				<!-- wp:html -->
 				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-partnerships.svg' ); ?>" alt="" width="28" height="25" /></div>
 				<!-- /wp:html -->
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">Native Partnerships</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">Native Partnerships</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>We identify and empower "near-neighbor" and indigenous leaders who already speak the language and understand the cultural nuances.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">We identify and empower "near-neighbor" and indigenous leaders who already speak the language and understand the cultural nuances.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -48,11 +48,11 @@ $uri = get_template_directory_uri();
 				<!-- wp:html -->
 				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-training.svg' ); ?>" alt="" width="28" height="23" /></div>
 				<!-- /wp:html -->
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">Holistic Training</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">Holistic Training</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Equipping local believers with theological education, vocational skills, and leadership development to foster independent, thriving communities.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Equipping local believers with theological education, vocational skills, and leadership development to foster independent, thriving communities.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -65,11 +65,11 @@ $uri = get_template_directory_uri();
 				<!-- wp:html -->
 				<div class="up-bento-card__icon" aria-hidden="true"><img src="<?php echo esc_url( $uri . '/assets/images/shared/icons/model-development.svg' ); ?>" alt="" width="23" height="23" /></div>
 				<!-- /wp:html -->
-				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading">Long-term Dev</h3>
+				<!-- wp:heading {"textAlign":"center","level":3} -->
+				<h3 class="wp-block-heading has-text-align-center">Long-term Dev</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Ongoing investment in infrastructure, clean water, and literacy alongside church planting to ensure the whole community flourishes.</p>
+				<!-- wp:paragraph {"align":"center"} -->
+				<p class="has-text-align-center">Ongoing investment in infrastructure, clean water, and literacy alongside church planting to ensure the whole community flourishes.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
