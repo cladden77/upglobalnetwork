@@ -2353,6 +2353,13 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	background: #fff;
 }
 
+@media (max-width: 1100px) {
+	.up-quote.wp-block-group,
+	.up-quote {
+		padding: 64px var(--up-pad) !important;
+	}
+}
+
 .up-newsletter.wp-block-group,
 .up-newsletter {
 	padding: 80px var(--up-pad) !important;
