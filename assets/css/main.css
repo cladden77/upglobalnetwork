@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 }
 
 .up-hero--short {
-	min-height: 520px;
+	min-height: 495px;
 }
 
 .up-hero__media {
@@ -1172,7 +1172,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-approach,
 .up-stats,
 .up-contact {
-	padding: 80px var(--up-pad);
+	padding: 75px var(--up-pad);
 }
 
 .up-bento {
@@ -1685,6 +1685,89 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	resize: vertical;
 }
 
+.up-contact .up-form label,
+.up-contact__form label,
+.up-contact__form .gfield_label,
+.up-contact__form .wpforms-field-label,
+.up-contact__form .wpcf7-form label {
+	display: block;
+	margin-bottom: 14.5px;
+	color: var(--up-navy);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1.8px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.up-contact .up-form .up-field,
+.up-contact__form .up-field,
+.up-contact__form .gfield,
+.up-contact__form .wpforms-field,
+.up-contact__form .wpcf7-form p {
+	margin: 0 0 32px;
+}
+
+.up-contact .up-form input,
+.up-contact .up-form textarea,
+.up-contact__form input[type="text"],
+.up-contact__form input[type="email"],
+.up-contact__form input[type="tel"],
+.up-contact__form textarea,
+.up-contact__form .up-form__fake-input {
+	width: 100%;
+	min-height: 50px;
+	padding: 14px 12px;
+	border: 1px solid var(--up-card-border);
+	border-radius: 0;
+	background: #fff;
+	color: #6b7280;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	box-shadow: none;
+}
+
+.up-contact .up-form textarea,
+.up-contact__form textarea,
+.up-contact__form .up-form__fake-input--area {
+	min-height: 170px;
+	padding: 11px 12px;
+	line-height: 1.6;
+	resize: vertical;
+}
+
+.up-btn--contact,
+.up-contact__form .up-btn--contact,
+.up-contact__form input[type="submit"],
+.up-contact__form button[type="submit"],
+.up-contact__form .wpforms-submit,
+.up-contact__form .wpcf7-submit,
+.up-contact__form .gform_button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 46px;
+	margin: 0;
+	padding: 16px 0;
+	border: 0;
+	border-radius: 0;
+	background: var(--up-navy);
+	color: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1.4px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.up-form--placeholder .up-btn--contact {
+	cursor: default;
+}
+
 .up-pathways {
 	background: #efeded;
 	padding: 80px var(--up-pad);
@@ -2087,32 +2170,14 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	color: var(--up-body);
 }
 
-.up-contact__grid {
-	display: grid;
-	grid-template-columns: 1.2fr 0.8fr;
-	gap: 48px;
+.up-contact__grid,
+.up-contact__cols {
+	display: flex;
+	align-items: flex-start;
+	gap: 62px;
 	width: 100%;
-	max-width: none;
-	margin: 0;
-}
-
-.up-contact__info {
-	background: var(--up-navy);
-	color: #fff;
-	padding: 40px 32px;
-}
-
-.up-contact__info h3 {
-	color: #fff;
-	font-size: 24px;
-	font-weight: 600;
-	margin: 0 0 12px;
-}
-
-.up-contact__info p {
-	color: rgba(255, 255, 255, 0.85);
-	font-size: 16px;
-	margin-bottom: 24px;
+	max-width: 1130px;
+	margin: 0 auto;
 }
 
 .up-not-pictured {
@@ -2176,9 +2241,32 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	.up-who__grid,
 	.up-strategy__grid,
 	.up-split__grid,
-	.up-contact__grid {
+	.up-contact__grid,
+	.up-contact__cols {
 		grid-template-columns: 1fr;
 		gap: 40px;
+	}
+
+	.up-contact .wp-block-columns,
+	.up-contact .up-contact__cols.wp-block-columns {
+		flex-direction: column !important;
+		gap: 48px !important;
+	}
+
+	.up-contact .up-contact__form-col,
+	.up-contact .up-contact__aside {
+		flex-basis: 100% !important;
+		width: 100% !important;
+		max-width: none;
+	}
+
+	.up-contact__form.wp-block-group,
+	.up-contact__form {
+		padding: 32px !important;
+	}
+
+	.up-contact__photo img {
+		height: 360px;
 	}
 
 	.up-strategy .wp-block-columns,
@@ -2607,9 +2695,14 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 .up-integrity,
 .up-narrative,
 .up-approach,
-.up-stats,
-.up-contact {
+.up-stats {
 	padding: 80px var(--up-pad) !important;
+}
+
+.up-contact.wp-block-group,
+.up-contact {
+	padding: 75px var(--up-pad) !important;
+	background: #fff;
 }
 
 .up-split--leadership.wp-block-group,
@@ -2682,7 +2775,34 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 }
 
 .up-hero.wp-block-cover.up-hero--short {
-	min-height: 520px;
+	min-height: 495px;
+}
+
+.up-hero--contact.wp-block-cover .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 685px !important;
+}
+
+.up-hero--contact.wp-block-cover h1 {
+	letter-spacing: -1.28px;
+	line-height: 1.125;
+}
+
+.up-hero--contact.wp-block-cover p {
+	max-width: 685px;
+}
+
+.up-hero--contact.wp-block-cover .wp-block-cover__background {
+	opacity: 0.716;
+}
+
+.up-hero--contact.wp-block-cover p.up-eyebrow,
+.up-hero--contact.wp-block-cover p.up-eyebrow--white {
+	font-weight: 600;
+	letter-spacing: 2.1px;
+	line-height: 1.43;
 }
 
 /* Line hero copy up with the header logo (same left padding) */
@@ -3406,13 +3526,34 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	border-radius: 0;
 }
 
-.up-split .wp-block-columns,
-.up-contact .wp-block-columns {
+.up-split .wp-block-columns {
 	gap: 48px;
 	width: 100%;
 	max-width: none;
 	margin: 0;
 	align-items: center;
+}
+
+.up-contact .wp-block-columns,
+.up-contact .up-contact__cols.wp-block-columns {
+	display: flex !important;
+	align-items: flex-start !important;
+	gap: 62px !important;
+	width: 100%;
+	max-width: 1130px;
+	margin: 0 auto;
+}
+
+.up-contact .up-contact__form-col {
+	flex-basis: 586px !important;
+	flex-grow: 1;
+	max-width: 586px;
+}
+
+.up-contact .up-contact__aside {
+	flex-basis: 482px !important;
+	flex-grow: 1;
+	max-width: 482px;
 }
 
 .up-split--panel .wp-block-columns {
@@ -3624,9 +3765,100 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	text-transform: uppercase;
 }
 
-.up-contact__info.wp-block-group {
-	padding: 40px 32px !important;
-	height: 100%;
+.up-contact__form.wp-block-group,
+.up-contact__form {
+	width: 100%;
+	padding: 48px !important;
+	background: #fff;
+	border: 1px solid var(--up-card-border);
+}
+
+.up-contact__form .up-form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.up-contact__form .up-form--placeholder {
+	pointer-events: none;
+	user-select: none;
+}
+
+.up-contact__form .wpcf7,
+.up-contact__form .wpforms-container,
+.up-contact__form .gform_wrapper,
+.up-contact__form .wp-block-shortcode {
+	width: 100%;
+}
+
+.up-contact__photo.wp-block-image,
+.up-contact__photo {
+	width: 100%;
+	margin: 0 0 48px !important;
+	line-height: 0;
+}
+
+.up-contact__photo img {
+	display: block;
+	width: 100%;
+	height: 415px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.up-contact__details.wp-block-group,
+.up-contact__details {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr;
+	gap: 48px;
+	width: 100%;
+}
+
+.up-contact__detail.wp-block-group,
+.up-contact__detail {
+	display: flex !important;
+	flex-direction: column;
+	gap: 15px;
+	padding: 0 !important;
+	background: transparent;
+}
+
+.up-contact__detail h3,
+.up-contact__detail h3.wp-block-heading {
+	margin: 0;
+	color: var(--up-navy);
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.3;
+}
+
+.up-contact__detail p {
+	margin: 0;
+	color: var(--up-body);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.up-contact__social {
+	padding-top: 9px;
+}
+
+.up-contact__social a {
+	display: inline-flex;
+	align-items: flex-start;
+	line-height: 0;
+}
+
+.up-contact__social a:hover {
+	opacity: 0.75;
+}
+
+.up-contact__social img {
+	display: block;
+	width: 10px;
+	height: 22px;
 }
 
 .up-other > .up-card.wp-block-group {
@@ -3811,6 +4043,30 @@ figure.wp-block-image {
 
 	.up-hero--leadership h1 {
 		font-size: 36px !important;
+	}
+
+	.up-contact.wp-block-group,
+	.up-contact {
+		padding: 48px var(--up-pad) !important;
+	}
+
+	.up-contact__form.wp-block-group,
+	.up-contact__form {
+		padding: 24px !important;
+	}
+
+	.up-contact__details.wp-block-group,
+	.up-contact__details {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
+	.up-contact__photo {
+		margin-bottom: 32px !important;
+	}
+
+	.up-contact__photo img {
+		height: 280px;
 	}
 
 	.up-split--leadership .up-split__cols.wp-block-columns {
