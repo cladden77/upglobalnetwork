@@ -4,7 +4,6 @@
  * Slug: upglobalnetwork/leadership-board
  * Categories: upglobalnetwork
  */
-$uri = get_template_directory_uri();
 ?>
 <!-- wp:group {"align":"full","className":"up-board","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull up-board">
@@ -16,11 +15,9 @@ $uri = get_template_directory_uri();
 	<!-- /wp:paragraph -->
 	<!-- wp:group {"className":"up-board__grid","layout":{"type":"default"}} -->
 	<div class="wp-block-group up-board__grid">
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-3.jpg' ); ?>" alt="Gary Klaussen"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'gary-klaussen', 'Gary Klaussen', 'leadership/portrait-3.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Board Chairman</p>
 			<!-- /wp:paragraph -->
@@ -32,27 +29,9 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-1.jpg' ); ?>" alt="Paul Ewing"/></figure>
-			<!-- /wp:image -->
-			<!-- wp:paragraph {"className":"up-person__role"} -->
-			<p class="up-person__role">Board Vice Chairman</p>
-			<!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} -->
-			<h3 class="wp-block-heading">Paul Ewing</h3>
-			<!-- /wp:heading -->
-			<!-- wp:paragraph -->
-			<p>Paul founded Prosperity Advisors, a financial planning firm, in 1989. Paul is also the founder of Living Waters Canoe Ministry and has served on the Board of Directors for Overland Park Regional, Mission Southside, and Christian Youth Theater. Paul also previously held the role of the South Asia Regional Director for missions at Olathe Bible Church.</p>
-			<!-- /wp:paragraph -->
-		</div>
-		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-1.jpg' ); ?>" alt="Eric Fry"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'eric-fry', 'Eric Fry', 'leadership/portrait-1.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Board Member</p>
 			<!-- /wp:paragraph -->
@@ -64,27 +43,23 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-2.jpg' ); ?>" alt="Rex Bonar"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'paul-ewing', 'Paul Ewing', 'leadership/portrait-1.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
-			<p class="up-person__role">Board Member</p>
+			<p class="up-person__role">Board Vice Chairman</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3} -->
-			<h3 class="wp-block-heading">Rex Bonar</h3>
+			<h3 class="wp-block-heading">Paul Ewing</h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph -->
-			<p>Rex is the Founder of UP Global Network. Rex has been in ministry for 40 years. During that time he filled the roles of Lead Pastor and Missions Pastor at Olathe Bible Church. He has led teams around the world, including India, Panama, Ukraine, and Africa.</p>
+			<p>Paul founded Prosperity Advisors, a financial planning firm, in 1989. Paul is also the founder of Living Waters Canoe Ministry and has served on the Board of Directors for Overland Park Regional, Mission Southside, and Christian Youth Theater. Paul also previously held the role of the South Asia Regional Director for missions at Olathe Bible Church.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-3.jpg' ); ?>" alt="Chris Tatham"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'chris-tatham', 'Chris Tatham', 'leadership/portrait-3.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Board Member</p>
 			<!-- /wp:paragraph -->
@@ -96,11 +71,23 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-4.jpg' ); ?>" alt="Susan Bonar"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'rex-bonar', 'Rex Bonar', 'leadership/portrait-2.jpg' ); ?>
+			<!-- wp:paragraph {"className":"up-person__role"} -->
+			<p class="up-person__role">Board Member</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} -->
+			<h3 class="wp-block-heading">Rex Bonar</h3>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph -->
+			<p>Rex is the Founder of UP Global Network. Rex has been in ministry for 40 years. During that time he filled the roles of Lead Pastor and Missions Pastor at Olathe Bible Church. He has led teams around the world, including India, Panama, Ukraine, and Africa.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
+		<div class="wp-block-group up-person">
+			<?php upgn_portrait_block( 'susan-bonar', 'Susan Bonar', 'leadership/portrait-4.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Board Member</p>
 			<!-- /wp:paragraph -->
@@ -112,11 +99,9 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-3.jpg' ); ?>" alt="Ty Cross"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'ty-cross', 'Ty Cross', 'leadership/portrait-3.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Board Member</p>
 			<!-- /wp:paragraph -->
@@ -128,16 +113,16 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-	</div>
-	<!-- /wp:group -->
-	<!-- wp:group {"className":"up-not-pictured","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group up-not-pictured">
-		<!-- wp:heading {"level":3} -->
-		<h3 class="wp-block-heading">Board Members<br />(not pictured)</h3>
-		<!-- /wp:heading -->
-		<!-- wp:paragraph -->
-		<p>Dolly Mwanzia<br />Duane Ediger<br />Jerot Pearson</p>
-		<!-- /wp:paragraph -->
+		<!-- wp:group {"className":"up-person up-person--not-pictured","layout":{"type":"default"}} -->
+		<div class="wp-block-group up-person up-person--not-pictured">
+			<!-- wp:heading {"textAlign":"center","level":3} -->
+			<h3 class="wp-block-heading has-text-align-center">Board Members<br /><em>(not pictured)</em></h3>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">Dolly Mwanzia<br />Duane Ediger<br />Jerot Pearson</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </div>

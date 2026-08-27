@@ -65,6 +65,19 @@
 							"src": ["file:./assets/fonts/poppins-v24-latin-700.woff2"]
 						}
 					]
+				},
+				{
+					"fontFamily": "\"EB Garamond\", serif",
+					"name": "EB Garamond",
+					"slug": "eb-garamond",
+					"fontFace": [
+						{
+							"fontFamily": "EB Garamond",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"src": ["file:./assets/fonts/eb-garamond-italic.woff2"]
+						}
+					]
 				}
 			],
 			"fontSizes": [

@@ -4,10 +4,9 @@
  * Slug: upglobalnetwork/leadership-team
  * Categories: upglobalnetwork
  */
-$uri = get_template_directory_uri();
 ?>
-<!-- wp:group {"align":"full","className":"up-team","style":{"color":{"background":"#f5f3f3"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull up-team has-background" style="background-color:#f5f3f3">
+<!-- wp:group {"align":"full","className":"up-team","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull up-team">
 	<!-- wp:heading {"level":2} -->
 	<h2 class="wp-block-heading">Our Leadership Team</h2>
 	<!-- /wp:heading -->
@@ -16,11 +15,9 @@ $uri = get_template_directory_uri();
 	<!-- /wp:paragraph -->
 	<!-- wp:group {"className":"up-team__grid","layout":{"type":"default"}} -->
 	<div class="wp-block-group up-team__grid">
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-1.jpg' ); ?>" alt="Eric Fry"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'eric-fry', 'Eric Fry', 'leadership/portrait-1.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">President</p>
 			<!-- /wp:paragraph -->
@@ -32,11 +29,9 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-2.jpg' ); ?>" alt="Rex Bonar"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'rex-bonar', 'Rex Bonar', 'leadership/portrait-2.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Founder &amp; Strategic Director</p>
 			<!-- /wp:paragraph -->
@@ -48,11 +43,9 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-3.jpg' ); ?>" alt="Ty Cross"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'ty-cross', 'Ty Cross', 'leadership/portrait-3.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Strategic Director</p>
 			<!-- /wp:paragraph -->
@@ -64,11 +57,9 @@ $uri = get_template_directory_uri();
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:group {"className":"up-person","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"up-person","layout":{"type":"default"}} -->
 		<div class="wp-block-group up-person">
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large"><img src="<?php echo esc_url( $uri . '/assets/images/leadership/portrait-4.jpg' ); ?>" alt="Sarah Wonnell"/></figure>
-			<!-- /wp:image -->
+			<?php upgn_portrait_block( 'sarah-wonnell', 'Sarah Wonnell', 'leadership/portrait-4.jpg' ); ?>
 			<!-- wp:paragraph {"className":"up-person__role"} -->
 			<p class="up-person__role">Peaceful Generation Communications Coordinator</p>
 			<!-- /wp:paragraph -->

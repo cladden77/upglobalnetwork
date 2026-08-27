@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'UPGN_VERSION', '1.4.2' );
+define( 'UPGN_VERSION', '1.4.5' );
 define( 'UPGN_DIR', get_template_directory() );
 define( 'UPGN_URI', get_template_directory_uri() );
 
@@ -124,4 +124,73 @@ add_action( 'init', 'upgn_register_pattern_category' );
  */
 function upgn_image( $path ) {
 	return esc_url( UPGN_URI . '/assets/images/' . ltrim( $path, '/' ) );
+}
+
+/**
+ * Resolve a leadership portrait from the Media Library by attachment slug.
+ * Falls back to a theme asset when no matching upload exists.
+ *
+ * @param string $slug     Attachment post_name, e.g. 'eric-fry'.
+ * @param string $fallback Relative path under assets/images/.
+ * @return array{id:int,url:string,class:string}
+ */
+function upgn_portrait( $slug, $fallback = '' ) {
+	$found = get_posts(
+		array(
+			'post_type'              => 'attachment',
+			'name'                   => $slug,
+			'posts_per_page'         => 1,
+			'post_status'            => 'inherit',
+			'no_found_rows'          => true,
+			'update_post_meta_cache' => false,
+			'update_post_term_cache' => false,
+		)
+	);
+
+	if ( ! empty( $found ) ) {
+		$id  = (int) $found[0]->ID;
+		$url = wp_get_attachment_image_url( $id, 'full' );
+		if ( $url ) {
+			return array(
+				'id'    => $id,
+				'url'   => $url,
+				'class' => 'wp-image-' . $id,
+			);
+		}
+	}
+
+	return array(
+		'id'    => 0,
+		'url'   => $fallback ? upgn_image( $fallback ) : '',
+		'class' => '',
+	);
+}
+
+/**
+ * Print a core/image block for a leadership portrait (Media Library–aware).
+ *
+ * @param string $slug     Attachment post_name.
+ * @param string $alt      Image alt text.
+ * @param string $fallback Theme asset fallback under assets/images/.
+ */
+function upgn_portrait_block( $slug, $alt, $fallback ) {
+	$img   = upgn_portrait( $slug, $fallback );
+	$size  = $img['id'] ? 'full' : 'large';
+	$attrs = array( 'sizeSlug' => $size, 'linkDestination' => 'none' );
+	if ( $img['id'] ) {
+		$attrs = array( 'id' => $img['id'] ) + $attrs;
+	}
+
+	$class_attr = $img['class'] ? ' class="' . esc_attr( $img['class'] ) . '"' : '';
+
+	printf(
+		'<!-- wp:image %s -->' . "\n" .
+		'<figure class="wp-block-image size-%s"><img src="%s" alt="%s"%s/></figure>' . "\n" .
+		'<!-- /wp:image -->' . "\n",
+		wp_json_encode( $attrs ),
+		esc_attr( $size ),
+		esc_url( $img['url'] ),
+		esc_attr( $alt ),
+		$class_attr
+	);
 }
