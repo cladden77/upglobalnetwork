@@ -1246,8 +1246,8 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 
 .up-step {
 	display: grid;
-	grid-template-columns: 50px 1fr;
-	gap: 12px 24px;
+	grid-template-columns: 46px 1fr;
+	gap: 0 24px;
 	align-items: start;
 }
 
@@ -1257,6 +1257,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	font-weight: 700;
 	line-height: 1.11;
 	margin: 0;
+	padding: 0;
 }
 
 .up-step__body {
@@ -1268,11 +1269,11 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.33;
-	margin: 4px 0 8px;
+	margin: 0 0 8px;
 }
 
-.up-step p {
-	color: #fff;
+.up-step__body p {
+	color: rgba(255, 255, 255, 0.7);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -2654,7 +2655,7 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 
 .up-step.wp-block-group {
 	display: grid !important;
-	grid-template-columns: 50px 1fr;
+	grid-template-columns: 46px 1fr;
 	column-gap: 24px;
 	row-gap: 0;
 	align-items: start;
@@ -2681,8 +2682,15 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	color: var(--up-olive);
 }
 
-.up-approach .up-step__num {
-	margin: 0;
+.up-approach .up-step__num,
+.up-approach .up-step p.up-step__num {
+	color: var(--up-olive) !important;
+	font-size: 36px !important;
+	font-weight: 700 !important;
+	line-height: 1.11 !important;
+	letter-spacing: 0;
+	margin: 0 !important;
+	padding: 0;
 }
 
 .up-approach .up-step h3,
@@ -2690,11 +2698,12 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 600;
-	margin: 4px 0 8px;
+	line-height: 1.33;
+	margin: 0 0 8px !important;
 }
 
-.up-approach .up-step p {
-	color: #fff;
+.up-approach .up-step__body p {
+	color: rgba(255, 255, 255, 0.7);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
