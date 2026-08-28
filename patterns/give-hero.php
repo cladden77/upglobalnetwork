@@ -6,8 +6,8 @@
  */
 $img = esc_url( get_template_directory_uri() . '/assets/images/give/hero.jpg' );
 ?>
-<!-- wp:cover {"url":"<?php echo $img; ?>","dimRatio":70,"customOverlayColor":"#000e1c","isUserOverlayColor":true,"minHeight":640,"align":"full","contentPosition":"left center","className":"up-hero up-hero--page","layout":{"type":"default"}} -->
-<div class="wp-block-cover alignfull up-hero has-custom-content-position is-position-left-center up-hero--page" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-70 has-background-dim" style="background-color:#000e1c"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo $img; ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+<!-- wp:cover {"url":"<?php echo $img; ?>","dimRatio":72,"customOverlayColor":"#000e1c","isUserOverlayColor":true,"minHeight":791,"minHeightUnit":"px","align":"full","contentPosition":"left center","className":"up-hero up-hero--page up-hero--give","layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull up-hero has-custom-content-position is-position-left-center up-hero--page up-hero--give" style="min-height:791px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-70 has-background-dim" style="background-color:#000e1c"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo $img; ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 	<!-- wp:paragraph {"className":"up-eyebrow up-eyebrow--white"} -->
 	<p class="up-eyebrow up-eyebrow--white">Our Shared Mission</p>
 	<!-- /wp:paragraph -->
@@ -20,7 +20,7 @@ $img = esc_url( get_template_directory_uri() . '/assets/images/give/hero.jpg' );
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons">
 		<!-- wp:button -->
-		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#give">Give Now</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#give">GIVE NOW</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
