@@ -2796,6 +2796,21 @@ h1, h2, h3, h4, h5, h6, p, ul, figure, blockquote {
 	justify-content: flex-start !important;
 }
 
+/* Photo is 2022×951. A fixed 893px frame crops the person and the vehicle
+   on typical desktop widths. Follow the photo so both edges stay in view. */
+.up-hero--home.wp-block-cover {
+	width: 100%;
+	max-width: 100%;
+	aspect-ratio: 2022 / 951;
+	max-height: 893px;
+	min-height: 0 !important;
+}
+
+.up-hero--home.wp-block-cover img.wp-block-cover__image-background {
+	object-fit: cover;
+	object-position: center 62%;
+}
+
 .up-hero.wp-block-cover.up-hero--page {
 	min-height: 791px;
 }
@@ -4410,6 +4425,13 @@ figure.wp-block-image {
 }
 
 @media (max-width: 767px) {
+	.up-hero--home.wp-block-cover {
+		width: 100%;
+		max-width: 100%;
+		aspect-ratio: auto;
+		min-height: 560px !important;
+	}
+
 	.up-hero.wp-block-cover h1,
 	.up-hero--light h1 {
 		font-size: 36px;

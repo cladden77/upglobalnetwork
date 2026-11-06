@@ -4,10 +4,10 @@
  * Slug: upglobalnetwork/home-hero
  * Categories: upglobalnetwork
  */
-$img = esc_url( get_template_directory_uri() . '/assets/images/home/hero.jpg' );
+$img = esc_url( get_template_directory_uri() . '/assets/images/home/FRONT.jpg' );
 ?>
-<!-- wp:cover {"url":"<?php echo $img; ?>","dimRatio":70,"customOverlayColor":"#000e1c","isUserOverlayColor":true,"minHeight":893,"minHeightUnit":"px","align":"full","contentPosition":"left center","className":"up-hero","layout":{"type":"default"}} -->
-<div class="wp-block-cover alignfull up-hero has-custom-content-position is-position-left-center" style="min-height:893px">
+<!-- wp:cover {"url":"<?php echo $img; ?>","dimRatio":70,"customOverlayColor":"#000e1c","isUserOverlayColor":true,"align":"full","contentPosition":"left center","className":"up-hero up-hero--home","layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull up-hero up-hero--home has-custom-content-position is-position-left-center">
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-70 has-background-dim" style="background-color:#000e1c"></span>
 	<img class="wp-block-cover__image-background" alt="Community gathering" src="<?php echo $img; ?>" data-object-fit="cover"/>
 	<div class="wp-block-cover__inner-container">
